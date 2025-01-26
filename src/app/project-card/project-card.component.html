@@ -1,0 +1,51 @@
+<div
+  class="grid xl:grid-cols-[1fr_2fr_1fr] items-center h-fit w-full rounded-xl gap-4 hover:scale-110 ease-in duration-300 hover:bg-black hover:shadow-2xl hover:text-white p-5"
+>
+  <!-- Imagen del proyecto con enlace -->
+  <div class="flex justify-center items-center">
+    <a [href]="projectLink" target="_blank" class="h-full w-full">
+      <div class="rounded-xl">
+        <img
+          [src]="imageSrc"
+          [alt]="imageAlt"
+          class="h-56 w-full object-fill rounded-xl"
+        />
+      </div>
+    </a>
+  </div>
+
+  <!-- Descripción del proyecto -->
+  <div class="flex justify-center items-center text-center">
+    <span class="text-xl font-mono font-semibold">
+      {{ description }}
+    </span>
+  </div>
+
+  <!-- Tecnologías -->
+  <div class="grid grid-rows-2 justify-center items-center">
+    <span class="flex justify-center items-center gap-2">
+      <ng-container *ngFor="let tech of technologies">
+        <img
+          [src]="tech.src"
+          [alt]="tech.alt"
+          [style.height.rem]="tech.height"
+          [style.width.rem]="tech.width"
+        />
+      </ng-container>
+    </span>
+
+    <!-- Botón para ver el código -->
+    <span
+      class="font-mono font-bold px-24 h-full w-full flex justify-center items-center"
+    >
+      <a
+        [href]="codeLink"
+        target="_blank"
+        class="flex justify-center items-center mt-14 rounded-full bg-white text-black p-5 text-xs uppercase tracking-widest font-medium shadow-lg transition-all duration-300 ease-in-out hover:bg-yellow-300 hover:shadow-xl hover:translate-y-[-7px] outline-none"
+      >
+        SEE CODE
+      </a>
+    </span>
+  </div>
+</div>
+

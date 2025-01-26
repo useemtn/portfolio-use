@@ -1,0 +1,349 @@
+<div class="info h-full w-full grid grid-rows-2 justify-end items-center">
+  <div class="info mt-36 grid xl:grid-cols-2 justify-end items-center">
+    <div class="flex-col justify-center items-center">
+      <span
+        class="text-2xl xl:text-5xl font-mono font-bold px-24 h-full w-full flex justify-center items-center text-white"
+      >
+        Hola, soy Use, un apasionado desarrollador web fullstack. Estoy en
+        búsqueda de nuevas oportunidades para contribuir con mis habilidades
+        técnicas y creativas al éxito de proyectos innovadores.
+      </span>
+      <span
+        class="font-mono font-bold px-24 h-full w-full flex justify-center items-center"
+      >
+        <a
+          href="/CV_Eusebio.pdf"
+          download
+          class="flex justify-center items-center mt-14 rounded-full bg-white text-black p-5 text-xs uppercase tracking-widest font-medium shadow-lg transition-all duration-300 ease-in-out hover:bg-yellow-300 hover:shadow-xl hover:translate-y-[-7px] outline-none"
+        >
+          Descargar CV
+        </a>
+      </span>
+    </div>
+<!--     <div class="flex justify-center items-center h-full w-full p-2">
+      <img src="/person.png" alt="person" class="rounded-full h-96 w-96 border-black border-2" />
+    </div> -->
+  </div>
+
+  <div class="info h-full w-full grid xl:grid-cols-4 justify-center items-end">
+    <app-button-component buttonText="Proyectos" link="#proyectos" />
+    <app-button-component buttonText="Habilidades" link="#skills" />
+    <app-button-component buttonText="Experiencia" link="#experiencia" />
+    <app-button-component buttonText="Formación" link="#formacion" />
+  </div>
+</div>
+
+<div
+  class="animate-on-scroll proyectos grid grid-rows-2 justify-center items-center"
+  id="proyectos"
+>
+  <div class="flex justify-center items-center w-full">
+    <span class="xl:text-7xl text-5xl font-mono font-bold text-white"
+      >Proyectos</span
+    >
+  </div>
+  <!-- CAMBIAR VALOR DE ESTA ROW PARA AGREGAR MAS PROYECTOS-->
+  <div class="grid grid-rows-1 gap-2">
+    <app-project-card
+      [projectLink]="'https://usa2shop.vercel.app/'"
+      [imageSrc]="'/proyecto_uno.png'"
+      [imageAlt]="'Proyecto Uno'"
+      [description]="
+        'Ecommerce de ropa de segunda mano usando Django como Backend y React como Frontend.'
+      "
+      [technologies]="[
+        {
+          src: '/tecnologias/react.png',
+          alt: 'React',
+          width: '5',
+          height: '4'
+        },
+        {
+          src: '/tecnologias/tailwind.png',
+          alt: 'Tailwind',
+          width: '3',
+          height: '2'
+        },
+        {
+          src: '/tecnologias/django.png',
+          alt: 'Django',
+          width: '3',
+          height: '3'
+        },
+        {
+          src: '/tecnologias/postgres.png',
+          alt: 'Postgres',
+          width: '3',
+          height: '3'
+        }
+      ]"
+      [codeLink]="'https://github.com/KaZZuSe/backend'"
+    />
+  </div>
+</div>
+<div
+  class="animate-on-scroll skills grid grid-rows-2 justify-center items-center"
+  id="skills"
+>
+  <div class="flex justify-center items-center w-full">
+    <span class="xl:text-7xl text-5xl font-mono font-bold text-white"
+      >Skills</span
+    >
+  </div>
+  <div class="grid gap-2 xl:grid-cols-4">
+    <div class="w-72 h-60 mx-auto bg-[#011522] rounded-lg relative">
+      <div class="flex items-center p-[9px]">
+        <div class="px-1">
+          <span
+            class="inline-block w-[10px] h-[10px] p-[1px] rounded-full bg-[#ff605c]"
+          ></span>
+        </div>
+        <div class="px-1">
+          <span
+            class="inline-block w-[10px] h-[10px] p-[1px] rounded-full bg-[#ffbd44]"
+          ></span>
+        </div>
+        <div class="px-1">
+          <span
+            class="inline-block w-[10px] h-[10px] p-[1px] rounded-full bg-[#00ca4e]"
+          ></span>
+        </div>
+        <div class="px-1">
+          <span
+            class="inline-block w-[10px] h-[10px] p-[1px] rounded-full text-white font-bold"
+            >FRONTEND</span
+          >
+        </div>
+      </div>
+      <div
+        class="card__content grid grid-cols-3 justify-center items-center gap-5 mt-7"
+      >
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tecnologias/react.png" alt="react" class="h-8 w-11" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tecnologias/tailwind.png" alt="tailwind" class="h-6 w-8" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img src="/favicon.ico" alt="angular" class="h-8 w-8" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img
+            src="/tecnologias/bootstrap.png"
+            alt="bootstrap"
+            class="h-6 w-8"
+          />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tecnologias/js.png" alt="js" class="h-8 w-8" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tecnologias/ts.png" alt="ts" class="h-8 w-8" />
+        </span>
+      </div>
+    </div>
+    <div class="w-72 h-60 mx-auto bg-[#011522] rounded-lg relative">
+      <div class="flex items-center p-[9px]">
+        <div class="px-1">
+          <span
+            class="inline-block w-[10px] h-[10px] p-[1px] rounded-full bg-[#ff605c]"
+          ></span>
+        </div>
+        <div class="px-1">
+          <span
+            class="inline-block w-[10px] h-[10px] p-[1px] rounded-full bg-[#ffbd44]"
+          ></span>
+        </div>
+        <div class="px-1">
+          <span
+            class="inline-block w-[10px] h-[10px] p-[1px] rounded-full bg-[#00ca4e]"
+          ></span>
+        </div>
+        <div class="px-1">
+          <span
+            class="inline-block w-[10px] h-[10px] p-[1px] rounded-full text-white font-bold"
+            >BACKEND</span
+          >
+        </div>
+      </div>
+      <div
+        class="card__content grid grid-cols-3 justify-center items-center gap-5 mt-7"
+      >
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tecnologias/php.png" alt="php" class="h-7 w-12" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tecnologias/django.png" alt="django" class="h-8 w-8" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tecnologias/py.webp" alt="python" class="h-8 w-8" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tecnologias/js.png" alt="js" class="h-8 w-8" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tecnologias/java.png" alt="java" class="h-9 w-9" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tecnologias/spring-boot.png" alt="spring-boot" class="h-9 w-16" />
+        </span>
+      </div>
+    </div>
+    <div class="w-72 h-60 mx-auto bg-[#011522] rounded-lg relative">
+      <div class="flex items-center p-[9px]">
+        <div class="px-1">
+          <span
+            class="inline-block w-[10px] h-[10px] p-[1px] rounded-full bg-[#ff605c]"
+          ></span>
+        </div>
+        <div class="px-1">
+          <span
+            class="inline-block w-[10px] h-[10px] p-[1px] rounded-full bg-[#ffbd44]"
+          ></span>
+        </div>
+        <div class="px-1">
+          <span
+            class="inline-block w-[10px] h-[10px] p-[1px] rounded-full bg-[#00ca4e]"
+          ></span>
+        </div>
+        <div class="px-1">
+          <span
+            class="inline-block w-[10px] h-[10px] p-[1px] rounded-full text-white font-bold"
+            >DATABASE</span
+          >
+        </div>
+      </div>
+      <div
+        class="card__content grid grid-cols-3 justify-center items-center gap-5 mt-7"
+      >
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tecnologias/postgres.png" alt="postgres" class="h-8 w-8" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tecnologias/mysql.png" alt="mysql" class="h-8 w-11" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img
+            src="/tecnologias/n4j.jpg"
+            alt="n4j"
+            class="h-9 w-14 rounded-xl"
+          />
+        </span>
+        <span class="flex justify-center items-center gap-2"> </span>
+        <span class="flex justify-center items-center gap-2">
+          <img
+            src="/tools/pandas.png"
+            alt="pandas"
+            class="h-8 w-full rounded-xl"
+          />
+        </span>
+      </div>
+    </div>
+    <div class="w-72 h-60 mx-auto bg-[#011522] rounded-lg relative">
+      <div class="flex items-center p-[9px]">
+        <div class="px-1">
+          <span
+            class="inline-block w-[10px] h-[10px] p-[1px] rounded-full bg-[#ff605c]"
+          ></span>
+        </div>
+        <div class="px-1">
+          <span
+            class="inline-block w-[10px] h-[10px] p-[1px] rounded-full bg-[#ffbd44]"
+          ></span>
+        </div>
+        <div class="px-1">
+          <span
+            class="inline-block w-[10px] h-[10px] p-[1px] rounded-full bg-[#00ca4e]"
+          ></span>
+        </div>
+        <div class="px-1">
+          <span
+            class="inline-block w-[10px] h-[10px] p-[1px] rounded-full text-white font-bold"
+            >TOOLS</span
+          >
+        </div>
+      </div>
+      <div
+        class="card__content grid grid-cols-3 justify-center items-center gap-5 mt-7"
+      >
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tools/vsc.png" alt="vsc" class="h-8 w-8" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tools/pycharm.png" alt="pycharm" class="h-8 w-8" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tools/ps.png" alt="ps" class="h-8 w-8" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tools/xml.png" alt="xml" class="h-8 w-8" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tools/git.png" alt="git" class="h-8 w-8" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tools/postman.webp" alt="postman" class="h-8 w-8" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tools/docker.webp" alt="postman" class="h-8 w-8" />
+        </span>
+        <span class="flex justify-center items-center gap-2">
+          <img src="/tools/aws.png" alt="aws" class="h-7 w-11" />
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="animate-on-scroll experiencia grid grid-rows-2 justify-center items-center w-full max-w-5xl mx-auto"
+  id="experiencia"
+>
+  <div class="flex justify-center items-center w-full mt-20">
+    <span class="xl:text-7xl text-5xl font-mono font-bold text-white"
+      >Experiencia</span
+    >
+  </div>
+  <app-experience-item
+    title="Desarrollador Web Front-end React + Tailwind"
+    subtitle="Agencia Aurea"
+    period="Marzo 2024 - Junio 2024"
+  />
+
+  <app-experience-item
+    title="Departamento Informática Sistemas Microinformáticos"
+    subtitle="Beritec"
+    period="Marzo 2022 - Junio 2022"
+  />
+</div>
+
+<div
+  class="animate-on-scroll experiencia grid grid-rows-2 justify-center items-center w-full"
+  id="formacion"
+>
+  <div class="flex justify-center items-center w-full mt-20">
+    <span class="xl:text-7xl text-5xl font-mono font-bold text-white"
+      >Formación</span
+    >
+  </div>
+  <app-experience-item
+    title="Especialización Big Data e Inteligencia Artificial"
+    subtitle="IES Arcipreste de Hita"
+    period="Septiembre 2024 - Actualidad"
+  />
+  <app-experience-item
+    title="Neo4j Graph Data Science Certification"
+    subtitle="Neo4j"
+    period="Diciembre 2024"
+  />
+  <app-experience-item
+    title="Neo4j Certified Professional"
+    subtitle="Neo4j"
+    period="Diciembre 2024"
+  />
+  <app-experience-item
+    title="Grado Superior Desarrollo Aplicaciones Web"
+    subtitle="IES Arcipreste de Hita"
+    period="Septiembre 2022 - Junio 2024"
+  />
+</div>
