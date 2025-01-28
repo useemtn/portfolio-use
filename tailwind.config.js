@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        '3xl': '1921px', // Breakpoint personalizado para resoluciones mayores a 1920x1080
+      },
+    },
   },
   plugins: [],
-}
+};
