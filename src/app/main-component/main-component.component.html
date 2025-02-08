@@ -43,11 +43,11 @@
     >
   </div>
   <!-- CAMBIAR VALOR DE ESTA ROW PARA AGREGAR MAS PROYECTOS-->
-  <div class="grid grid-rows-1 gap-2">
+  <div class="grid grid-rows-2 gap-2">
     <app-project-card
       [projectLink]="'https://usa2shop.vercel.app/'"
       [imageSrc]="'/proyecto_uno.png'"
-      [imageAlt]="'Proyecto Uno'"
+      [imageAlt]="'Ecommerce Django + React'"
       [description]="
         'Ecommerce de ropa de segunda mano usando Django como Backend y React como Frontend.'
       "
@@ -55,7 +55,7 @@
         {
           src: '/tecnologias/react.png',
           alt: 'React',
-          width: '5',
+          width: '7',
           height: '4'
         },
         {
@@ -77,7 +77,42 @@
           height: '3'
         }
       ]"
-      [codeLink]="'https://github.com/KaZZuSe/backend'"
+      [codeLink]="'https://github.com/useemtn/backend'"
+    />
+    <app-project-card
+      [projectLink]="''"
+      [imageSrc]="'/proyecto_dos.png'"
+      [imageAlt]="'Weather App Django'"
+      [description]="
+        'Aplicación que conecta con diversas APIs para obtener países, fronteras y temperaturas.'
+      "
+      [technologies]="[
+        {
+          src: '/tecnologias/django.png',
+          alt: 'Django',
+          width: '3',
+          height: '3'
+        },
+        {
+          src: '/tecnologias/bootstrap.png',
+          alt: 'bootstrap',
+          width: '3',
+          height: '2'
+        },
+        {
+          src: '/tecnologias/mysql.png',
+          alt: 'bootstrap',
+          width: '3',
+          height: '2'
+        },
+        {
+          src: '/tools/docker.webp',
+          alt: 'docker',
+          width: '3',
+          height: '3'
+        }
+      ]"
+      [codeLink]="'https://github.com/useemtn/weather-app'"
     />
   </div>
 </div>
