@@ -10,4 +10,5 @@ export class ExperienceItemComponent {
   @Input() title: string = ''; 
   @Input() subtitle: string = ''; 
   @Input() period: string = ''; 
+  @Input() exp: string = ''; 
 }
