@@ -2,19 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+    background-color: black;
   }
   
- /*  .wrapper {
-    height: 100vh;
-    width: 100vw; 
-    position: fixed; 
+  .wrapper {
+    height: 100vh; /* Altura de toda la pantalla */
+    width: 100vw; /* Ancho completo */
+    position: fixed; /* Fija el fondo en toda la ventana */
     top: 0;
     left: 0;
-    z-index: -1; 
-    overflow: hidden; 
+    z-index: -1; /* Envía el fondo detrás de todos los elementos */
+    overflow: hidden; /* Evita que las burbujas salgan del contenedor */
   }
   
-  .wrapper h1 {
+ /*  .wrapper h1 {
     display: none; 
   }
   
