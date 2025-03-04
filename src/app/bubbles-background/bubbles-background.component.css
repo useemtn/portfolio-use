@@ -5,18 +5,18 @@
     background-color: black;
   }
   
-  .wrapper {
-    height: 100vh; /* Altura de toda la pantalla */
-    width: 100vw; /* Ancho completo */
-    position: fixed; /* Fija el fondo en toda la ventana */
+ /*  .wrapper {
+    height: 100vh;
+    width: 100vw; 
+    position: fixed; 
     top: 0;
     left: 0;
-    z-index: -1; /* Envía el fondo detrás de todos los elementos */
-    overflow: hidden; /* Evita que las burbujas salgan del contenedor */
+    z-index: -1; 
+    overflow: hidden; 
   }
   
   .wrapper h1 {
-    display: none; /* Si no necesitas el título, ocúltalo */
+    display: none; 
   }
   
   .wrapper div {
@@ -126,4 +126,4 @@
     100% {
       transform: scale(0) translateY(0) rotate(70deg);
     }
-  }
+  } */
