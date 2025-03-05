@@ -2,9 +2,9 @@
     display: block;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(90deg, white, rgba(0, 0, 0, 0.884));
-    background-size: 200% 200%;
-    animation: gradientShift 50s linear infinite;
+    background: linear-gradient(45deg, #1a1a2e, #16213e, #0f3460, #1f4068);
+    background-size: 400% 400%;
+    animation: gradientShift 20s ease infinite;
 }
 
 @keyframes gradientShift {
