@@ -6,7 +6,7 @@ import { ButtonComponentComponent } from '../button-component/button-component.c
 @Component({
   selector: 'app-main-component',
   standalone: true,
-  imports: [ExperienceItemComponent, FormacionItemComponent, ProjectCardComponent, ButtonComponentComponent],
+  imports: [ExperienceItemComponent, ProjectCardComponent, ButtonComponentComponent],
   templateUrl: './main-component.component.html',
   styleUrls: ['./main-component.component.css']
 })
